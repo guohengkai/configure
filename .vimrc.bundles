@@ -1,0 +1,27 @@
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+" Define bundles via Github repos
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'vim-scripts/ctags.vim'
+Bundle "scrooloose/nerdtree"
+Bundle "Lokaltog/vim-powerline"
+Bundle "klen/python-mode"
+Bundle "ctrlpvim/ctrlp.vim"
+Bundle 'croaky/vim-colors-github'
+Bundle 'mileszs/ack.vim'
+
+
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
+filetype on
