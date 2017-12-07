@@ -152,3 +152,19 @@ nmap <F5> :NERDTreeToggle<cr>
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+nmap <F9> :TagbarToggle<CR>
+" 启动时自动focus
+let g:tagbar_autofocus = 1
+
+" for ruby, delete if you do not need
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+\ }
