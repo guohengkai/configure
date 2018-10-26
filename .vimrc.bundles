@@ -14,11 +14,14 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-scripts/ctags.vim'
 Bundle "scrooloose/nerdtree"
 Bundle "Lokaltog/vim-powerline"
-Bundle "klen/python-mode"
+Bundle 'klen/python-mode'
 Bundle "ctrlpvim/ctrlp.vim"
 Bundle 'croaky/vim-colors-github'
 Bundle 'mileszs/ack.vim'
 Bundle 'majutsushi/tagbar'
+Bundle "tomasr/molokai"
+Bundle 'tpope/vim-pathogen'
+Bundle 'nvie/vim-flake8'
 
 
 if filereadable(expand("~/.vimrc.bundles.local"))
