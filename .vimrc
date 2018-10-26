@@ -151,6 +151,7 @@ endif
 nmap <F5> :NERDTreeToggle<cr>
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_max_num_candidates = 20
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 nmap <F9> :TagbarToggle<CR>
@@ -168,3 +169,10 @@ let g:tagbar_type_ruby = {
         \ 'F:singleton methods'
     \ ]
 \ }
+
+let $PATH='$HOME/.cargo/bin:/usr/bin:/usr/local/bin:/bin:/usr/sbin:/sbin'
+let g:pymode_python = 'python3'
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope = 0
+
+autocmd FileType c,cpp,hpp,python,java,sh autocmd BufWritePre <buffer> :%s/\s\+$//e
